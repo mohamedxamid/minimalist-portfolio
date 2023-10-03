@@ -145,6 +145,129 @@ h3 {
 }
 
 
+/* BUTTON */
+.button {
+    display: inline-block;
+    padding: 17px 32px;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    background-color: #fff;
+    border: 1px solid var(--grey-blue);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.button:hover {
+    color: var(--text-color-dark);
+    background-color: var(--grey-blue);
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+.button > span {
+    display: none;
+}
+
+.button:disabled,
+.button[disabled] {
+    opacity: 0.2;
+}
+
+.button-primary {
+    position: relative;
+    min-width: 200px;
+    padding: 17px 8px 17px 56px;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: var(--dark-blue);
+    text-align: center;
+}
+
+.button-primary:hover {
+    background-color: var(--green);
+}
+
+.button-primary:active {
+    opacity: 0.6;
+}
+
+.button-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url("../img/button-img.svg");
+    background-repeat: no-repeat;
+}
+
+.button-primary:hover::before {
+    background-image: url("../img/button-img-white.svg");
+}
+
+
+/* FORM ELEMENTS */
+.form-group {
+    position: relative;
+}
+
+.form-field {
+    display: block;
+    width: 100%;
+    padding: 9px 16px;
+    border: 1px solid transparent;
+    background-color: rgba(51, 50, 61, 0.1);
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.form-field::placeholder {
+    color: rgba(51, 50, 61, 0.4);
+}
+
+.error-msg {
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    color: var(--red);
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    transform: translateY(100%);
+}
+
+.form-field-textarea {
+    min-height: 84px;
+    resize: vertical;
+}
+
+.form-field:not(:focus):not(:placeholder-shown):valid {
+    border-color: var(--green);
+}
+
+.form-field:not(:focus):not(:placeholder-shown):invalid {
+    border-color: var(--red);
+}
+
+.form-field:focus + .error-msg,
+.form-field:valid + .error-msg,
+.form-field:placeholder-shown + .error-msg {
+    display: none;
+}
+
+
 /* MAIN CONTENT */
 .main-content {
     flex-grow: 1;
