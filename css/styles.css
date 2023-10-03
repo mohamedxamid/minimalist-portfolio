@@ -1,10 +1,65 @@
 /* CUSTOM PROPS */
 :root {
-    /* Custom styles */
+    --green:  #5fb4a2;
+    --dark-blue: #203a4c;
+    --grey-blue: #33323d;
+    --light-grey: #fafafa;
+    --grey: #eaeaeb;
+    --red: #f43030;
+    --text-color: var(--grey-blue);
+    --text-color-dark: var(--light-grey);
+    --bg-color: var(--light-grey);
+
+    --accent-font-family: "Ibarra Real Nova", "Times New Roman", serif;
+    --body-font-family: "Public Sans", "Arial", sans-serif; 
 }
 
 
 /* FONTS */
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-BoldItalic.woff2") format("woff2"),
+    url("../fonts/PublicSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
+    url("../fonts/PublicSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ibarra Real Nova";
+    src: url("IbarraRealNova-Regular.woff2") format("woff2"),
+    url("IbarraRealNova-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
+    url("../fonts/PublicSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Ibarra Real Nova";
+    src: url("IbarraRealNova-Bold.woff2") format("woff2"),
+    url("IbarraRealNova-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
 
 /* GLOBAL */
@@ -20,21 +75,17 @@ html {
     box-sizing: inherit;
 }
 
-*:focus {
-    /* Outline styles */
-}
-
 body {
     display: flex;
     flex-direction: column;
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--body-font-family);
     font-size: 16px;
-    line-height: 1.5;
-    color: #222;
-    background-color: #fff;
+    line-height: 30px;
+    color: var(--text-color);
+    background-color: var(--bg-color);
 }
 
 img {
@@ -42,31 +93,32 @@ img {
     height: auto;
 }
 
-/* AUTOFILL STYLES*/
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-    border: 1px solid green;
-    -webkit-text-fill-color: green;
-    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
-    transition: background-color 5000s ease-in-out 0s;
-} */
+h1 {
+    margin: 0;
+    font-family: var(--accent-font-family);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.446px;
+}
 
+h2 {
+    margin: 0;
+    font-family: var(--accent-font-family);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+}
 
-/* PLACEHOLDER STYLES */
-/* ::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-    color: #000;
-    opacity: 1;
-} */
+h3 {
+    margin: 0;
+    font-family: var(--accent-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -0.286px;
+}
 
 
 /* VISUALLY HIDDEN */
@@ -82,13 +134,12 @@ select:-webkit-autofill:focus {
 }
 
 
-
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1190px;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-left: auto;
     margin-right: auto;
 }
