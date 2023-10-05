@@ -393,6 +393,29 @@ h3 {
 .site-header__sitenav-toggler_actice span::after {
     transform: rotate(-45deg);
 }
+
+
+/* HERO STYLES */
+.hero {
+    padding-bottom: 75px;
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__img {
+    display: flex;
+    width: 100%;
+}
+
+.hero__content {
+    background-color: #fff;
+}
+
+.hero__heading {
+    margin-bottom: 32px;
+}
 /* SITE FOOTER */
 .site-footer {
     background-color: var(--grey-blue);
@@ -482,6 +505,12 @@ only screen and (                min-resolution: 2dppx) {
         border: none;
         background-color: transparent;
     }
+
+    .hero__heading {
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357px;
+    }
     .site-footer {
         padding-top: 56px;
         padding-bottom: 56px;
@@ -516,6 +545,11 @@ only screen and (                min-resolution: 2dppx) {
     .site-header__sitenav {
         display: block;
     }
+    
+    .hero__heading {
+        margin-bottom: 48px;
+    }
+    
     .site-footer {
         padding-top: 33px;
         padding-bottom: 33px;
@@ -533,10 +567,47 @@ only screen and (                min-resolution: 2dppx) {
     .site-footer__socials {
         margin-left: auto;
     }
+
+@media only screen and (width < 760px) {
+    .hero__img {
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    .hero__content {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 39px;
+        width: 514px;
+        max-width: 100%;
+        padding-top: 56px;
+        padding-right: 56px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .hero__heading {
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: -0.357px;
+    }
 }
 
 @media only screen and (min-width: 850px) {
     .site-header {
         padding-bottom: 54px;
+    }
+    
+    .hero__content {
+        width: 445px;
+    }
+    
+    .hero__heading {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.446px;
+        margin-bottom: 53px;
     }
 }
