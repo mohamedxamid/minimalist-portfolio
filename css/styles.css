@@ -456,6 +456,43 @@ h3 {
 }
 
 
+/* PORTFOLIO-PROJECTS */
+
+.projects {
+    padding-bottom: 40px;
+}
+
+.project {
+    display: flex;
+}
+
+.project:not(:last-child) {
+    margin-bottom: 72px;
+}
+
+.project__img {
+    flex-shrink: 0;
+    display: block;
+    width: 100%;
+}
+
+.project__info {
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.project__title {
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+.project__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 15px;
+    opacity: 0.8;
+}
+
 
 
 @media
@@ -529,6 +566,19 @@ only screen and (                min-resolution: 2dppx) {
     .site-footer__sitenav {
         margin-bottom: 40px;
     }
+
+    .project {
+        flex-direction: column;
+    }
+    
+    .project__img {
+        margin-bottom: 32px;
+    }
+    
+    .project__info {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
 
 @media only screen and (width >= 500px) {
@@ -567,7 +617,40 @@ only screen and (                min-resolution: 2dppx) {
     .site-footer__socials {
         margin-left: auto;
     }
-
+    
+    .portfolio-projects {
+        padding-top: 47px;
+        padding-bottom: 75px;
+    }
+    
+    .project:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .project:nth-child(even) .project__info {
+        margin-right: 32px;
+        margin-left: 0px;
+    }
+    
+    .project:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    
+    .project__info {
+        width: 60%;
+        padding-top: 32px;
+        padding-bottom: 50px;
+        margin-left: 32px;
+    }
+    
+    .project__title {
+        margin-bottom: 30px;
+    }
+    
+    .project__text {
+        margin-bottom: 35px;
+    }
+    
 @media only screen and (width < 760px) {
     .hero__img {
         margin-bottom: 24px;
@@ -585,6 +668,21 @@ only screen and (                min-resolution: 2dppx) {
         padding-top: 56px;
         padding-right: 56px;
     }
+
+    .project {
+        align-items: center;
+    }
+
+    .project__info {
+        padding-top: 32px;
+        padding-bottom: 50px;
+        margin-left: 70px;
+    }
+
+    .project:nth-child(even) .project__info {
+        margin-right: 70px;
+    }
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -610,4 +708,29 @@ only screen and (                min-resolution: 2dppx) {
         letter-spacing: -0.446px;
         margin-bottom: 53px;
     }
+    
+    .project {
+        align-items: stretch;
+    }
+    
+    .project__title {
+        margin-bottom: 28px;
+    }
+    
+    .project__text {
+        margin-bottom: 24px;
+    }
+    
+
+@media only screen and (width >= 1024px) {
+    .project__info {
+        width: 350px;
+        max-width: 100%;
+        margin-left: 125px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
 }
