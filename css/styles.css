@@ -446,6 +446,24 @@ h3 {
 }
 
 
+/* CTA */
+.cta {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.cta__container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.cta__title {
+    width: 340px;
+    max-width: 100%;
+}
+
+
 /* SITE FOOTER */
 .site-footer {
     background-color: var(--grey-blue);
@@ -650,6 +668,14 @@ only screen and (                min-resolution: 2dppx) {
         max-width: 100%;
     }
     
+    .cta {
+        padding-top: 21px;
+        padding-bottom: 96px;
+    }
+    
+    .cta__container {
+        gap: 32px;
+    }
     
     .site-footer {
         padding-top: 33px;
@@ -702,6 +728,27 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 35px;
     }
     
+
+@media only screen and (width < 650px) {
+    .cta__container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media only screen and (width >= 650px) {
+    .cta__title {
+        flex-shrink: 0;
+    }
+    
+    .cta__line {
+        width: 100%;
+        max-width: 100%;
+        height: 1px;
+        background-color: rgba(51, 50, 61, 0.15);
+    }
+}
+
 @media only screen and (width < 760px) {
     .hero__img {
         margin-bottom: 24px;
@@ -769,6 +816,10 @@ only screen and (                min-resolution: 2dppx) {
         width: 350px;
     }
     
+    .cta {
+        padding-top: 75px;
+        padding-bottom: 150px;
+    }
     
     .project {
         align-items: stretch;
