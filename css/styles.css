@@ -795,7 +795,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
     .site-header_active .site-header__sitenav {
         position: absolute;
         right: 32px;
@@ -876,7 +876,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 499px) {
     .container {
         padding-left: 40px;
         padding-right: 40px;
