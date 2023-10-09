@@ -732,21 +732,6 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 48px;
     }
     
-    .about-me__container {
-        display: flex;
-    }
-    
-    .about-me__img-wrapper {
-        margin-right: 70px;
-        width: 281px;
-        max-width: 100%;
-    }
-    
-    .about-me__info {
-        width: 339px;
-        max-width: 100%;
-    }
-    
     .cta {
         padding-top: 21px;
         padding-bottom: 96px;
