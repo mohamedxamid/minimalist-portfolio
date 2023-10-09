@@ -809,6 +809,32 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media only screen and (width >= 650px) {
+    .about-me__container {
+        display: flex;
+    }
+
+    .about-me__img-wrapper {
+        margin-right: 70px;
+        width: 281px;
+        max-width: 100%;
+    }
+
+    .about-me__picture {
+        display: block;
+        height: 100%;
+    }
+    
+    .about-me__img {
+        height: 100%;
+        object-fit: cover;
+        object-position: right bottom;
+    }
+
+    .about-me__info {
+        width: 339px;
+        max-width: 100%;
+    }
+    
     .cta__title {
         flex-shrink: 0;
     }
