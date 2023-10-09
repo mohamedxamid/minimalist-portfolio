@@ -618,6 +618,73 @@ h3 {
 }
 
 
+/* PREV NEXT PROJECTS */
+.prev-next-projects {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.prev-next-projects__container {
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.prev-next-projects__inner {
+    display: flex;
+}
+
+.prev-next-projects__btn-wrapper {
+    flex-grow: 1;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.prev-next-projects__btn-wrapper:last-child {
+    justify-content: flex-end;
+}
+
+.prev-next-projects__btn-wrapper:not(:last-child) {
+    border-right: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.prev-next-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.prev-next-btn:hover {
+    color: var(--green);
+}
+
+.prev-next-btn:active {
+    opacity: 0.6;
+}
+
+.prev-next-btn__inner {
+    display: flex;
+}
+
+.prev-next-btn__icon {
+    display: block;
+}
+
+.prev-next-btn__title {
+    display: block;
+    font-family: var(--accent-font-family);
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.286px;
+}
+
+.prev-next-btn__text {
+    display: block;
+    color: rgba(51, 50, 61, 0.5);
+}
+
+
+
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -640,6 +707,13 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 8px;
     }
     
+    .prev-next-btn__title {
+        font-size: 22px;
+    }
+    
+    .prev-next-btn__text {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (width < 500px) {
@@ -711,6 +785,16 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 48px;
     }
     
+    .prev-next-btn__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .prev-next-projects__btn-wrapper:last-child .prev-next-btn__inner {
+        align-items: flex-end;
+        text-align: end;
+    }
 }
 
 @media only screen and (width >= 500px) {
@@ -790,6 +874,20 @@ only screen and (                min-resolution: 2dppx) {
     
     .layout-2-1__1 {
         margin-bottom: 40px;
+    }
+    
+    .prev-next-projects {
+        padding-top: 40px;
+        padding-bottom: 59px;
+    }
+    
+    .prev-next-btn__inner {
+        align-items: center;
+        gap: 32px;
+    }
+    
+    .prev-next-projects__btn-wrapper:last-child .prev-next-btn__inner {
+        flex-direction: row-reverse;
     }
     
 }
@@ -980,6 +1078,11 @@ only screen and (                min-resolution: 2dppx) {
     
     .project__text {
         margin-bottom: 24px;
+    }
+    
+    .prev-next-projects {
+        padding-top: 17px;
+        padding-bottom: 75px;
     }
     
 
