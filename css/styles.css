@@ -582,6 +582,41 @@ h3 {
 }
 
 
+/* Portfolio Details Background */
+.portfolio-details__background {
+    margin-bottom: 40px;
+}
+
+.project-background__title {
+    margin-bottom: 28px;
+}
+
+.project-background__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* Portfolio Details Previews */
+.project-previews__title {
+    margin-bottom: 40px;
+}
+
+.project-previews__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-previews__img-wrapper:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.project-previews__img {
+    width: 100%;
+    max-width: 100%;
+}
+
 
 
 @media
