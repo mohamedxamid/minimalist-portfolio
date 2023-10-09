@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist - portfolio</title>
+    
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="site-header__container container">
+            <a class="site-header__logo logo" href="index.html">
+                <img class="logo__img" src="img/logo.svg" alt="site logo" width="60" height="32">
+            </a>
+            <div class="site-header__sitenav-wrapper">
+                <nav class="site-header__sitenav sitenav">
+                    <ul class="sitenav__list">
+                        <li class="sitenav__item"><a class="sitenav__link" href="index.html">home</a></li>
+                        <li class="sitenav__item"><a class="sitenav__link" href="portfolio.html">portfolio</a></li>
+                        <li class="sitenav__item"><a class="sitenav__link" href="contact.html">contact me</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <button class="site-header__sitenav-toggler" type="button">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        
+
+
+        <!-- PORTFOLIO DETAILS -->
+        <section class="portfolio-details">
+            <div class="portfolio-details__container container">
+                <div class="portfolio-details__img-wrapper">
+                    <img class="portfolio-details__img" src="img/portfolio-detail-fylo-desktop.jpg" alt="manage portfolio img" width="1110" height="500" srcset="img/portfolio-detail-fylo-desktop.jpg 1x, img/portfolio-detail-fylo-desktop@2x.jpg 2x">
+                </div>
+                <div class="layout-2-1">
+                    <div class="layout-2-1__1">
+                        <div class="portfolio-details__info">
+                            <h2 class="portfolio-details__title">Fylo</h2>
+                            <p class="portfolio-details__text">This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.</p>
+                            <div class="portfolio-details__badge-wrapper">
+                                <div class="portfolio-details__badge">Interaction Design / Front End Development</div>
+                                <div class="portfolio-details__badge">HTML / CSS</div>
+                            </div>
+                            <a class="button" href="#">visit website</a>
+                        </div>
+                    </div>
+                    <div class="layout-2-1__2">
+                        <div class="portfolio-details__background project-background">
+                            <h3 class="project-background__title">Project Background</h3>
+                            <p class="project-background__text">This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.</p>
+                        </div>
+                        <div class="portfolio-details__previews project-previews">
+                            <h3 class="project-previews__title">Static Previews</h3>
+                            <div class="project-previews__img-wrapper">
+                                <img class="project-previews__img" src="img/portfolio-detail-fylo-previews_1.jpg" alt="portfolio detail fylo previews" width="635" height="400" srcset="img/portfolio-detail-fylo-previews_1.jpg 1x, img/portfolio-detail-fylo-previews_1@2x.jpg 2x">
+                            </div>
+                            <div class="project-previews__img-wrapper">
+                                <img class="project-previews__img" src="img/portfolio-detail-fylo-previews_2.jpg" alt="portfolio detail fylo previews" width="635" height="400" srcset="img/portfolio-detail-fylo-previews_2.jpg 1x, img/portfolio-detail-fylo-previews_2@2x.jpg 2x">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREV NEXT PROJECTS -->
+        <section class="prev-next-projects">
+            <div class="prev-next-projects__container container">
+                <div class="prev-next-projects__inner">
+                    <div class="prev-next-projects__btn-wrapper">
+                        <a class="prev-next-projects__btn prev-next-btn" href="portfolio-detail-insure.html">
+                            <span class="prev-next-btn__inner">
+                                <span class="prev-next-btn__icon"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="none"><path stroke="currentColor" d="M9 1 1 9l8 8"/></svg></span>
+                                <span class="prev-next-btn__text-wrapper">
+                                    <span class="prev-next-btn__title">Insure</span>
+                                    <span class="prev-next-btn__text">Previous Project</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="prev-next-projects__btn-wrapper">
+                        <a class="prev-next-projects__btn prev-next-btn" href="portfolio-detail-manage.html">
+                            <span class="prev-next-btn__inner">
+                                <span class="prev-next-btn__icon"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="none"><path stroke="currentColor" d="m1 1 8 8-8 8"/></svg></span>
+                                <span class="prev-next-btn__text-wrapper">
+                                    <span class="prev-next-btn__title">Manage</span>
+                                    <span class="prev-next-btn__text">Next Project</span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- CTA -->
+        <section class="cta">
+            <div class="cta__container container">
+                <h2 class="cta__title">Interested in doing a project together?</h2>
+                <div class="cta__line"></div>
+                <a class="button" href="#">contact me</a>
+            </div>
+        </section>
+        
+        
+    </main>
+    
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="site-footer__container container">
+            <a class="site-footer__logo logo" href="index.html">
+                <img class="logo__img" src="img/logo.svg" alt="site logo" width="60" height="32">
+            </a>
+            
+            <nav class="site-footer__sitenav sitenav">
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">home</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">portfolio</a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#">contact me</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <ul class="site-footer__socials">
+                <li class="site-footer__socials-item">
+                    <a href="#" class="site-footer__socials-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" fill="none"><path fill="currentColor" d="M12.5 0C5.594 0 0 5.51 0 12.305c0 5.437 3.581 10.048 8.547 11.674.625.116.854-.265.854-.592 0-.292-.01-1.066-.016-2.092-3.477.742-4.21-1.65-4.21-1.65-.569-1.42-1.39-1.8-1.39-1.8-1.133-.764.087-.748.087-.748 1.255.086 1.914 1.268 1.914 1.268 1.115 1.881 2.927 1.338 3.641 1.024.113-.797.434-1.338.792-1.646-2.776-.308-5.694-1.366-5.694-6.08 0-1.343.484-2.44 1.286-3.302-.14-.31-.562-1.562.11-3.256 0 0 1.047-.33 3.437 1.261 1-.273 2.063-.409 3.125-.415 1.063.006 2.125.142 3.125.415 2.375-1.591 3.422-1.261 3.422-1.261.672 1.694.25 2.945.125 3.256.797.861 1.281 1.959 1.281 3.302 0 4.727-2.921 5.767-5.703 6.07.438.369.844 1.123.844 2.276 0 1.647-.015 2.97-.015 3.37 0 .322.218.707.859.584 5-1.615 8.579-6.23 8.579-11.659C25 5.51 19.403 0 12.5 0Z"/></svg>
+                    </a>
+                </li>
+                <li class="site-footer__socials-item">
+                    <a href="#" class="site-footer__socials-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="none"><path fill="currentColor" d="M24 2.557a9.83 9.83 0 0 1-2.828.775A4.932 4.932 0 0 0 23.337.608a9.864 9.864 0 0 1-3.127 1.195A4.916 4.916 0 0 0 16.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 0 1 1.671 1.149a4.93 4.93 0 0 0 1.523 6.574 4.903 4.903 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 0 1-2.224.084 4.928 4.928 0 0 0 4.6 3.419A9.9 9.9 0 0 1 0 17.54a13.94 13.94 0 0 0 7.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0 0 24 2.557Z"/></svg>
+                    </a>
+                </li>
+                <li class="site-footer__socials-item">
+                    <a href="#" class="site-footer__socials-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M2.4 0h19.2C22.92 0 24 1.08 24 2.4v19.2c0 1.32-1.08 2.4-2.4 2.4H2.4C1.08 24 0 22.92 0 21.6V2.4C0 1.08 1.08 0 2.4 0Zm1.2 20.4h3.6V9.6H3.6v10.8ZM5.4 7.56c-1.2 0-2.16-.96-2.16-2.16 0-1.2.96-2.16 2.16-2.16 1.2 0 2.16.96 2.16 2.16 0 1.2-.96 2.16-2.16 2.16ZM16.8 20.4h3.6v-6.84c0-2.28-1.92-4.2-4.2-4.2-1.08 0-2.4.72-3 1.68V9.6H9.6v10.8h3.6v-6.36c0-.96.84-1.8 1.8-1.8.96 0 1.8.84 1.8 1.8v6.36Z" clip-rule="evenodd"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
