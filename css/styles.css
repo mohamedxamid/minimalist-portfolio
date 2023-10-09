@@ -799,6 +799,7 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 40px;
     }
     
+}
 
 @media only screen and (width < 650px) {
     .cta__container {
