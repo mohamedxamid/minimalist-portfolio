@@ -777,7 +777,7 @@ only screen and (                min-resolution: 2dppx) {
     
 }
 
-@media only screen and (width <= 350px) {
+@media only screen and (max-width: 350px) {
     .portfolio-details__badge-wrapper {
         line-height: 20px;
     }
@@ -795,7 +795,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width < 500px) {
+@media only screen and (max-width: 500px) {
     .site-header_active .site-header__sitenav {
         position: absolute;
         right: 32px;
@@ -876,7 +876,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width >= 500px) {
+@media only screen and (min-width: 500px) {
     .container {
         padding-left: 40px;
         padding-right: 40px;
@@ -986,7 +986,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width < 650px) {
+@media only screen and (max-width: 650px) {
     .cta__container {
         flex-direction: column;
         text-align: center;
@@ -1017,7 +1017,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width >= 650px) {
+@media only screen and (min-width: 650px) {
     .about-me__container {
         display: flex;
     }
@@ -1069,7 +1069,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width < 760px) {
+@media only screen and (max-width: 760px) {
     .hero__img {
         margin-bottom: 24px;
     }
@@ -1217,7 +1217,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (width >= 1024px) {
+@media only screen and (min-width: 1024px) {
     .project__info {
         width: 350px;
         max-width: 100%;
@@ -1269,5 +1269,4 @@ only screen and (                min-resolution: 2dppx) {
         margin-bottom: 32px;
         font-size: 16px;
     }
-    
 }
