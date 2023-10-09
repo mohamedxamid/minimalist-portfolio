@@ -693,21 +693,7 @@ only screen and (                min-resolution: 2dppx) {
         padding-top: 56px;
         padding-bottom: 56px;
     }
-
-    .site-footer__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
     
-    .site-footer__logo {
-        margin-bottom: 40px;
-    }
-    
-    .site-footer__sitenav {
-        margin-bottom: 40px;
-    }
-
     .project {
         flex-direction: column;
     }
@@ -775,19 +761,6 @@ only screen and (                min-resolution: 2dppx) {
         padding-bottom: 33px;
     }
     
-    .site-footer__container {
-        display: flex;
-        align-items: center;
-    }
-    
-    .site-footer__logo {
-        margin-right: 48px;
-    }
-    
-    .site-footer__socials {
-        margin-left: auto;
-    }
-    
     .portfolio-projects {
         padding-top: 47px;
         padding-bottom: 75px;
@@ -841,6 +814,30 @@ only screen and (                min-resolution: 2dppx) {
         flex-direction: column;
         text-align: center;
     }
+    
+    .site-footer__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .site-footer__logo {
+        margin-bottom: 40px;
+    }
+    
+    .site-footer__sitenav {
+        margin-bottom: 40px;
+    }
+
+    .site-footer .sitenav__list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-footer .sitenav__item:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 32px;
+    }
 }
 
 @media only screen and (width >= 650px) {
@@ -879,6 +876,19 @@ only screen and (                min-resolution: 2dppx) {
         max-width: 100%;
         height: 1px;
         background-color: rgba(51, 50, 61, 0.15);
+    }
+
+    .site-footer__container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .site-footer__logo {
+        margin-right: 48px;
+    }
+    
+    .site-footer__socials {
+        margin-left: auto;
     }
 }
 
