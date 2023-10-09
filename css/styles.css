@@ -9,7 +9,7 @@
     --text-color: var(--grey-blue);
     --text-color-dark: var(--light-grey);
     --bg-color: var(--light-grey);
-
+    
     --accent-font-family: "Ibarra Real Nova", "Times New Roman", serif;
     --body-font-family: "Public Sans", "Arial", sans-serif; 
 }
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: "Ibarra Real Nova";
-    src: url("IbarraRealNova-Regular.woff2") format("woff2"),
-    url("IbarraRealNova-Regular.woff") format("woff");
+    src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
+    url("../fonts/IbarraRealNova-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -54,8 +54,8 @@
 
 @font-face {
     font-family: "Ibarra Real Nova";
-    src: url("IbarraRealNova-Bold.woff2") format("woff2"),
-    url("IbarraRealNova-Bold.woff") format("woff");
+    src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
+    url("../fonts/IbarraRealNova-Bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -684,6 +684,85 @@ h3 {
 }
 
 
+/* CONTACT */
+.contact-me {
+    padding-bottom: 80px;
+}
+
+.contact-me__content {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border-top: 1px solid rgba(51, 50, 61, 0.15);
+    border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.content-contact {
+    margin-bottom: 32px;
+}
+
+.content-contact__title {
+    margin-bottom: 24px;
+}
+
+.content-contact__text {
+    margin-top: 0;
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.8);
+}
+
+.content-contact__socials-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.content-contact__socials-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.content-contact__socials-link {
+    display: flex;
+    color: var(--grey-blue);
+}
+
+.content-contact__socials-link:hover {
+    color: var(--green);
+}
+
+.content-contact__socials-link:active {
+    opacity: 0.6;
+}
+
+
+/* CONTACT ME FORM */
+.form-contact__title {
+    margin-bottom: 24px;
+}
+
+.form-group:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgba(51, 50, 61, 0.8);
+}
+
+.contact-form__button {
+    padding: 17px 8px;
+}
+
+.contact-form__button::before {
+    content: none;
+}
 
 
 @media
@@ -693,16 +772,16 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
-
-/* Retina-specific stuff here */
-
+    
+    /* Retina-specific stuff here */
+    
 }
 
 @media only screen and (width <= 350px) {
     .portfolio-details__badge-wrapper {
         line-height: 20px;
     }
-
+    
     .portfolio-details__badge:not(:last-child) {
         margin-bottom: 8px;
     }
@@ -752,7 +831,7 @@ only screen and (                min-resolution: 2dppx) {
         border: none;
         background-color: transparent;
     }
-
+    
     .hero__heading {
         font-size: 40px;
         line-height: 42px;
@@ -890,6 +969,21 @@ only screen and (                min-resolution: 2dppx) {
         flex-direction: row-reverse;
     }
     
+    .contact-me {
+        padding-top: 47px;
+    }
+    
+    .contact-me__content {
+        padding-top: 32px;
+    }
+    
+    .contact-me {
+        padding-bottom: 96px;
+    }
+    
+    .form-contact__title {
+        margin-bottom: 32px;
+    }
 }
 
 @media only screen and (width < 650px) {
@@ -992,21 +1086,21 @@ only screen and (                min-resolution: 2dppx) {
         padding-top: 56px;
         padding-right: 56px;
     }
-
+    
     .project {
         align-items: center;
     }
-
+    
     .project__info {
         padding-top: 32px;
         padding-bottom: 50px;
         margin-left: 70px;
     }
-
+    
     .project:nth-child(even) .project__info {
         margin-right: 70px;
     }
-
+    
     .portfolio-details__info {
         display: grid;
         grid-template-columns: 340px 1fr;
@@ -1014,17 +1108,17 @@ only screen and (                min-resolution: 2dppx) {
         align-items: start;
         justify-items: start;
     }
-
+    
     .portfolio-details__title {
         margin-bottom: 0;
     }
-
+    
     .portfolio-details__text {
         grid-row: 1 / 4;
         grid-column: 2;
         margin-bottom: 0;
     }
-
+    
     .portfolio-details__badge-wrapper {
         margin-bottom: 0;
     }
@@ -1085,6 +1179,43 @@ only screen and (                min-resolution: 2dppx) {
         padding-bottom: 75px;
     }
     
+    .contact-me__content {
+        display: flex;
+        gap: 125px;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    
+    .content-contact__title {
+        width: 350px;
+        max-width: 100%;
+        flex-shrink: 0;
+        margin-bottom: 0;
+    }
+    
+    .content-contact__text {
+        font-size: 16px;
+    }
+    
+    .contact-me {
+        padding-bottom: 110px;
+    }
+    
+    .contact-me__form {
+        display: flex;
+        gap: 125px;
+    }
+    
+    .form-contact__title {
+        width: 350px;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+    
+    .form-contact__form {
+        flex-grow: 1;
+    }
+}
 
 @media only screen and (width >= 1024px) {
     .project__info {
@@ -1096,44 +1227,44 @@ only screen and (                min-resolution: 2dppx) {
         align-items: flex-start;
         justify-content: center;
     }
-
+    
     .portfolio-details__badge:not(:last-child) {
         margin-bottom: 16px;
     }
-
+    
     .portfolio-details__img-wrapper {
         margin-bottom: 125px;
     }
-
+    
     .layout-2-1 {
         display: flex;
         align-items: flex-start;
         gap: 125px;
     }
-
+    
     .layout-2-1__1 {
         width: 350px;
         max-width: 100%;
         flex-shrink: 0;
         margin-bottom: 0;
     }
-
+    
     .layout-2-1__2 {
         flex-grow: 1;
     }
-
+    
     .portfolio-details__info {
         display: block;
     }
-
+    
     .portfolio-details__title {
         margin-bottom: 30px;
     }
-
+    
     .portfolio-details__text {
         margin-bottom: 24px;
     }
-
+    
     .portfolio-details__badge-wrapper {
         margin-bottom: 32px;
         font-size: 16px;
