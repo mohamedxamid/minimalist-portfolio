@@ -1103,7 +1103,7 @@ only screen and (                min-resolution: 2dppx) {
     
     .portfolio-details__info {
         display: grid;
-        grid-template-columns: 340px 1fr;
+        grid-template: auto auto 1fr / 340px 1fr;
         gap: 16px 12px;
         align-items: start;
         justify-items: start;
