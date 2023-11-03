@@ -67,6 +67,7 @@ html {
     box-sizing: border-box;
     height: 100%;
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 *,
@@ -82,8 +83,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: var(--body-font-family);
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 187.5%;
     color: var(--text-color);
     background-color: var(--bg-color);
 }
@@ -96,28 +97,28 @@ img {
 h1 {
     margin: 0;
     font-family: var(--accent-font-family);
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 700;
-    line-height: 50px;
-    letter-spacing: -0.446px;
+    line-height: 100%;
+    letter-spacing: -0.0446rem;
 }
 
 h2 {
     margin: 0;
     font-family: var(--accent-font-family);
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 700;
-    line-height: 42px;
-    letter-spacing: -0.357px;
+    line-height: 105%;
+    letter-spacing: -0.0357rem;
 }
 
 h3 {
     margin: 0;
     font-family: var(--accent-font-family);
-    font-size: 32px;
+    font-size: 3.2rem;
     font-weight: 400;
-    line-height: 36px;
-    letter-spacing: -0.286px;
+    line-height: 112.5%;
+    letter-spacing: -0.0286rem;
 }
 
 
@@ -137,7 +138,7 @@ h3 {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1190px;
+    max-width: 119rem;
     padding-left: 32px;
     padding-right: 32px;
     margin-left: auto;
@@ -149,9 +150,9 @@ h3 {
 .button {
     display: inline-block;
     padding: 17px 32px;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     color: var(--text-color);
     background-color: #fff;
     border: 1px solid var(--grey-blue);
@@ -184,7 +185,7 @@ h3 {
 
 .button-primary {
     position: relative;
-    min-width: 200px;
+    min-width: 20rem;
     padding: 17px 8px 17px 56px;
     border: 1px solid transparent;
     color: #fff;
@@ -228,8 +229,8 @@ h3 {
     padding: 9px 16px;
     border: 1px solid transparent;
     background-color: rgba(51, 50, 61, 0.1);
-    font-size: 13px;
-    line-height: 30px;
+    font-size: 1.3rem;
+    line-height: 230.769%;
 }
 
 .form-field::placeholder {
@@ -241,7 +242,7 @@ h3 {
     bottom: -4px;
     left: 0;
     color: var(--red);
-    font-size: 10px;
+    font-size: 1rem;
     font-style: italic;
     font-weight: 700;
     line-height: normal;
@@ -249,7 +250,7 @@ h3 {
 }
 
 .form-field-textarea {
-    min-height: 84px;
+    min-height: 8.4rem;
     resize: vertical;
 }
 
@@ -309,9 +310,9 @@ h3 {
 .sitenav__link {
     display: block;
     color: var(--text-color);
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: normal;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -537,7 +538,7 @@ h3 {
 .project__text {
     margin-top: 0;
     margin-bottom: 24px;
-    font-size: 15px;
+    font-size: 1.5rem;
     opacity: 0.8;
 }
 
@@ -569,15 +570,15 @@ h3 {
 .portfolio-details__text {
     margin-top: 0;
     margin-bottom: 24px;
-    font-size: 15px;
+    font-size: 1.5rem;
     opacity: 0.8;
 }
 
 .portfolio-details__badge-wrapper {
     margin-bottom: 24px;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 230.769%;
     color: var(--green);
 }
 
@@ -673,9 +674,9 @@ h3 {
 .prev-next-btn__title {
     display: block;
     font-family: var(--accent-font-family);
-    font-size: 32px;
-    line-height: 36px;
-    letter-spacing: -0.286px;
+    font-size: 3.2rem;
+    line-height: 112.5%;
+    letter-spacing: -0.0286rem;
 }
 
 .prev-next-btn__text {
@@ -707,8 +708,8 @@ h3 {
 .content-contact__text {
     margin-top: 0;
     margin-bottom: 24px;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 200%;
     color: rgba(51, 50, 61, 0.8);
 }
 
@@ -750,9 +751,9 @@ h3 {
 .form-label {
     display: block;
     margin-bottom: 8px;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 230.769%;
     color: rgba(51, 50, 61, 0.8);
 }
 
@@ -777,9 +778,9 @@ only screen and (                min-resolution: 2dppx) {
     
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 35em) {
     .portfolio-details__badge-wrapper {
-        line-height: 20px;
+        line-height: 154%;
     }
     
     .portfolio-details__badge:not(:last-child) {
@@ -787,21 +788,21 @@ only screen and (                min-resolution: 2dppx) {
     }
     
     .prev-next-btn__title {
-        font-size: 22px;
+        font-size: 2.2rem;
     }
     
     .prev-next-btn__text {
-        font-size: 13px;
+        font-size: 1.3rem;
     }
 }
 
-@media only screen and (max-width: 499px) {
+@media only screen and (max-width: 49.9em) {
     .site-header_active .site-header__sitenav {
         position: absolute;
         right: 32px;
         top: 100%;
-        max-width: calc(100% - 64px);
-        min-width: 223px;
+        max-width: calc(100% - 6.4rem);
+        min-width: 22.3rem;
         display: block;
         padding: 40px;
         background-color: var(--grey-blue);
@@ -833,9 +834,9 @@ only screen and (                min-resolution: 2dppx) {
     }
     
     .hero__heading {
-        font-size: 40px;
-        line-height: 42px;
-        letter-spacing: -0.357px;
+        font-size: 4rem;
+        line-height: 105%;
+        letter-spacing: -0.0357rem;
     }
     
     .about-me__img-wrapper {
@@ -876,7 +877,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 499px) {
+@media only screen and (min-width: 49.9em) {
     .container {
         padding-left: 40px;
         padding-right: 40px;
@@ -986,7 +987,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 65em) {
     .cta__container {
         flex-direction: column;
         text-align: center;
@@ -1017,7 +1018,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 65em) {
     .about-me__container {
         display: flex;
     }
@@ -1069,13 +1070,13 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 759px) {
+@media only screen and (max-width: 75.9em) {
     .hero__img {
         margin-bottom: 24px;
     }
 }
 
-@media only screen and (min-width: 759px) {
+@media only screen and (min-width: 75.9em) {
     .hero__content {
         position: absolute;
         z-index: 1;
@@ -1124,15 +1125,15 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 85em) {
     .hero__heading {
-        font-size: 40px;
-        line-height: 42px;
-        letter-spacing: -0.357px;
+        font-size: 4rem;
+        line-height: 105%;
+        letter-spacing: -0.0357rem;
     }
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 85em) {
     .site-header {
         padding-bottom: 54px;
     }
@@ -1142,9 +1143,9 @@ only screen and (                min-resolution: 2dppx) {
     }
     
     .hero__heading {
-        font-size: 50px;
-        line-height: 50px;
-        letter-spacing: -0.446px;
+        font-size: 5rem;
+        line-height: 100%;
+        letter-spacing: -0.0446rem;
         margin-bottom: 53px;
     }
     
@@ -1194,7 +1195,7 @@ only screen and (                min-resolution: 2dppx) {
     }
     
     .content-contact__text {
-        font-size: 16px;
+        font-size: 1.6rem;
     }
     
     .contact-me {
@@ -1217,7 +1218,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 102.4em) {
     .project__info {
         width: 350px;
         max-width: 100%;
@@ -1267,6 +1268,6 @@ only screen and (                min-resolution: 2dppx) {
     
     .portfolio-details__badge-wrapper {
         margin-bottom: 32px;
-        font-size: 16px;
+        font-size: 1.6rem;
     }
 }
