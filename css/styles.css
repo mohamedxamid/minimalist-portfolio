@@ -778,7 +778,7 @@ only screen and (                min-resolution: 2dppx) {
     
 }
 
-@media only screen and (max-width: 35em) {
+@media only screen and (max-width: 21.9em) {
     .portfolio-details__badge-wrapper {
         line-height: 154%;
     }
@@ -796,7 +796,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 49.9em) {
+@media only screen and (max-width: 31.2em) {
     .site-header_active .site-header__sitenav {
         position: absolute;
         right: 32px;
@@ -877,7 +877,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 49.9em) {
+@media only screen and (min-width: 31.25em) {
     .container {
         padding-left: 40px;
         padding-right: 40px;
@@ -987,7 +987,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 65em) {
+@media only screen and (max-width: 40.62em) {
     .cta__container {
         flex-direction: column;
         text-align: center;
@@ -1018,7 +1018,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 40.625em) {
     .about-me__container {
         display: flex;
     }
@@ -1070,13 +1070,13 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 75.9em) {
+@media only screen and (max-width: 47.43em) {
     .hero__img {
         margin-bottom: 24px;
     }
 }
 
-@media only screen and (min-width: 75.9em) {
+@media only screen and (min-width: 47.43em) {
     .hero__content {
         position: absolute;
         z-index: 1;
@@ -1125,7 +1125,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (max-width: 85em) {
+@media only screen and (max-width: 53.12em) {
     .hero__heading {
         font-size: 4rem;
         line-height: 105%;
@@ -1133,7 +1133,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 85em) {
+@media only screen and (min-width: 53.12em) {
     .site-header {
         padding-bottom: 54px;
     }
@@ -1218,7 +1218,7 @@ only screen and (                min-resolution: 2dppx) {
     }
 }
 
-@media only screen and (min-width: 102.4em) {
+@media only screen and (min-width: 64em) {
     .project__info {
         width: 350px;
         max-width: 100%;
