@@ -70,17 +70,17 @@
                     <form class="form-contact__form contact-form" action="https://echo.htmlacademy.ru" method="POST"><!-- class="form" -->
                         <div class="form-group"><!-- class="form__group" -->
                             <label class="form-label" for="name">Name</label><!-- class="form__label" -->
-                            <input  class="form-field" type="text" placeholder="Jane Appleseed"  id="name" required><!-- class="form__field" -->
+                            <input  class="form-field" type="text" name="name" placeholder="Jane Appleseed"  id="name" required><!-- class="form__field" -->
                         </div>
                         <div class="form-group">
                             <label class="form-label" for="email">Email Address</label>
-                            <input  class="form-field" type="email" placeholder="email@example.com"  id="email" required>
+                            <input  class="form-field" type="email" name="email" placeholder="email@example.com"  id="email" required>
                             <div class="error-msg">Please, enter valid email !</div>
                         </div>
 
                         <div class="form-group">
                             <label class="form-label" for="message">Message</label>
-                            <textarea  class="form-field form-field-textarea" placeholder="How can I help?"  id="message" required></textarea>
+                            <textarea  class="form-field form-field-textarea" name="message" placeholder="How can I help?"  id="message" required></textarea>
                         </div>
 
                         <button class="contact-form__button button button-primary" type="submit">send message</button>
@@ -135,6 +135,6 @@
     </footer>
     
     
-    <script src="js/main.js"></script>
+    <script src="./dist/js/bundle.js"></script>
 </body>
 </html>
