@@ -8,3 +8,6 @@
 6. form elementlari
 7. CTA section dagi line
 8. project page da tablet breakpoint'i uchun grid dan foydalanildi
+
+#1 npm start
+#2 npx webpack
